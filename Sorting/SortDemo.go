@@ -27,16 +27,19 @@ func main() {
 	printArray(array)
 	fmt.Println()
 
+	//Bubble Sort
 	bSortArray := bubbleSort(array)
 	fmt.Printf("Bubble sorted array: ")
 	printArray(bSortArray)
 	fmt.Println()
 
-	mSortArray := mergeSort(array)
+	//Merge Sort
+	mSortArray := mergeSort(array, 0, len(array)-1)
 	fmt.Printf("Merge sorted array: ")
 	printArray(mSortArray)
 	fmt.Println()
 
+	//Quick Sort
 	qSortArray := quickSort(array)
 	fmt.Printf("Quick sorted array: ")
 	printArray(qSortArray)
